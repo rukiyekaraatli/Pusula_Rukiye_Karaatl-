@@ -144,7 +144,8 @@ for col in categorical_columns:
     plt.title(f'{col} Dağılımı')
     plt.show()
 
-Çıktı: ![image](https://github.com/user-attachments/assets/4e95dd3a-2d70-45ac-9b52-7818ef436973)
+Çıktı: 
+![image](https://github.com/user-attachments/assets/4e95dd3a-2d70-45ac-9b52-7818ef436973)
 
 ![image](https://github.com/user-attachments/assets/198353cc-9d00-4089-b258-a655fb1c750a)
 
@@ -184,6 +185,7 @@ SimpleImputer sınıfı, eksik verileri doldurmak için kullanılan bir araçtı
 Sayısal Değişkenler için Eksik Verilerin Doldurulması:
 numerical_columns listesi, sayısal değişkenlerin adlarını içermektedir. Burada, 'Kilo' ve 'Boy' değişkenleri yer almaktadır. SimpleImputer yine kullanılarak, bu sayısal değişkenlerde eksik veriler ortalama (strategy='mean') ile doldurulmaktadır. sample_data[numerical_columns] kısmı, sayısal değişkenlerin bulunduğu DataFrame'in bir dilimidir ve fit_transform metodu ile eksik veriler ortalama ile doldurulmaktadır. Bu işlem, veri setindeki eksik verileri temizlemek ve daha sonrasında yapılacak analizler veya modelleme için verilerin hazır olmasını sağlamak amacıyla yapılmaktadır.
 Kategorik Değişkenlerin Kodlanması
+
 Kod: # Cinsiyet değişkenini LabelEncoder ile kodlama yapalım
 le = LabelEncoder()
 sample_data['Cinsiyet'] = le.fit_transform(sample_data['Cinsiyet'])
